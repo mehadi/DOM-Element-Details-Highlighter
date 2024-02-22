@@ -1,5 +1,7 @@
 # DOM Element Details Highlighter
 
+![DOM Element Details Highlighter](Screenshot.png)
+
 This repository contains code for a simple web application that highlights DOM elements on mouse hover and displays their details on click. It's built using HTML, CSS, JavaScript, and jQuery.
 
 ## Features

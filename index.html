@@ -18,36 +18,98 @@
             border-radius: 2px; /* Rounded corners */
             transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
         }
+
+        .parent {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .child {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .nested {
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body class="container">
-<div>
-    <div>
-        div1
-        <div>
-            div2
-            <div>
-                div3
-                <p>lorem ipsum <a href="#"> Test</a></p>
-            </div>
+<div class="parent">
+    <h2>Parent 1</h2>
+    <div class="child">Child 1 of Parent 1</div>
+    <div class="child">Child 2 of Parent 1</div>
+    <div class="child">Child 3 of Parent 1</div>
+    <div class="nested">
+        <h3>Nested Parent 1</h3>
+        <div class="child">Child 1 of Nested Parent 1</div>
+        <div class="child">Child 2 of Nested Parent 1</div>
+        <div class="child">Child 3 of Nested Parent 1</div>
+        <div class="nested">
+            <h4>Deeply Nested Parent 1</h4>
+            <div class="child">Child 1 of Deeply Nested Parent 1</div>
+            <div class="child">Child 2 of Deeply Nested Parent 1</div>
+            <div class="child">Child 3 of Deeply Nested Parent 1</div>
         </div>
     </div>
 </div>
 
-<article>
-    <p>
-        The Disney movie <cite>The Little Mermaid</cite> was first released to
-        theatres in 1989.
-    </p>
-    <aside>
-        <p>The movie earned $87 million during its initial release.</p>
-    </aside>
-    <p>More info about the movie…</p>
-</article>
+<div class="parent">
+    <h2>Parent 2</h2>
+    <ul class="child">
+        <li>Item 1 of Parent 2</li>
+        <li>Item 2 of Parent 2</li>
+        <li>Item 3 of Parent 2</li>
+    </ul>
+    <table class="nested">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+    <div class="nested">
+        <h3>Nested Parent 2</h3>
+        <ul>
+            <li>Item 1 of Nested Parent 2</li>
+            <li>Item 2 of Nested Parent 2</li>
+            <li>Item 3 of Nested Parent 2</li>
+        </ul>
+        <div class="child">Child of Nested Parent 2</div>
+    </div>
+</div>
 
-<div>
-    sfadsf
-    Test
+<div class="parent">
+    <h2>Parent 3</h2>
+    <form class="child">
+        <label for="inputField">Input Field:</label>
+        <input type="text" id="inputField" name="inputField">
+        <button type="submit">Submit</button>
+    </form>
+    <div class="nested">
+        <h3>Nested Parent 3</h3>
+        <ol>
+            <li>Item 1 of Nested Parent 3</li>
+            <li>Item 2 of Nested Parent 3</li>
+            <li>Item 3 of Nested Parent 3</li>
+        </ol>
+        <div class="child">Child of Nested Parent 3</div>
+        <div class="nested">
+            <h4>Deeply Nested Parent 3</h4>
+            <ul>
+                <li>Item 1 of Deeply Nested Parent 3</li>
+                <li>Item 2 of Deeply Nested Parent 3</li>
+                <li>Item 3 of Deeply Nested Parent 3</li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
